@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login page</title>
+  </head>
+  <body>
+    <section class="login-container">
+      <h1>Login</h1>
+      <form class="form-container" id="loginform">
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="options">
+          <div class="remember-me">
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+          </div>
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+        <button type="submit" class="auth-button">
+          Login
+        </button>
+        <div class="icon-container">
+          <h3>sign in with</h3>
+          <div class="icons">
+            <a href="https://www.google.com/"
+              ><i class="fa-brands fa-google"></i
+            ></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://github.com/"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="signup" id="singup">
+            <p>Don't have an account?</p>
+            <a href="register.html">Register here</a>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

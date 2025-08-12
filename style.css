@@ -1,0 +1,120 @@
+:root {
+  --background: rgba(76, 175, 80, 0.6);
+  --light-green: rgba(72, 180, 76, 0.1);
+  --Button: #e6a039;
+  --Text: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--Text);
+}
+body {
+  background: url("bg.jpg") no-repeat center center/cover;
+}
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 40px 30px 40px;
+}
+.login-container h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 23px;
+  color: #236131;
+}
+.form-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  border: solid 1px var(--Button);
+  background: var(--background);
+  border-radius: 7px;
+  padding: 30px 20px;
+}
+.input-group {
+  width: 100%;
+  background: rgb(235, 235, 235);
+  margin: 8px 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(141, 141, 141);
+}
+.input-group i {
+  color: var(--Button);
+  font-size: 20px;
+}
+.input-group input {
+  border: none;
+  outline: none;
+  color: grey;
+  background: transparent;
+  margin-left: 9px;
+}
+.input-group input::placeholder {
+  font-size: 20px;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+}
+.remember-me {
+  margin-left: 15px;
+}
+.remember-me label {
+  margin-left: 8px;
+}
+.forgot-password {
+  margin-right: 15px;
+}
+.forgot-password:hover {
+  color: var(--Button);
+}
+.auth-button {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  border: 2px solid var(--Text);
+  background-color: var(--Button);
+  color: var(--Text);
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 7px 0;
+}
+.auth-button:hover {
+  color: var(--Button);
+  background-color: var(--background);
+  border: 2px solid var(--Button);
+}
+.icon-container {
+  text-align: center;
+  margin-top: 40px;
+}
+.icons {
+  margin: 20px 0;
+}
+.icons i {
+  padding: 0 30px;
+}
+.icons a {
+  font-size: 25px;
+}
+.icons i:hover {
+  color: var(--Button);
+}
+.signup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.signup a:hover {
+  color: var(--Button);
+}
